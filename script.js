@@ -1,11 +1,4 @@
-/* =========================================================
-   🌸 TASKBLOOM - COMPLETE JAVASCRIPT
-========================================================= */
 
-
-/* =========================================================
-   🌷 GLOBAL DATA
-========================================================= */
 
 const STORAGE_KEY = "taskBloomTasks";
 
@@ -20,9 +13,7 @@ let currentNotesTaskId = null;
 let taskChart = null;
 
 
-/* =========================================================
-   🌸 DOM ELEMENTS
-========================================================= */
+
 
 const dashboardSection =
     document.getElementById("dashboardSection");
@@ -234,9 +225,6 @@ function saveTasks() {
 }
 
 
-/* =========================================================
-   🌷 INITIALIZE
-========================================================= */
 
 document.addEventListener(
     "DOMContentLoaded",
@@ -260,9 +248,6 @@ document.addEventListener(
 );
 
 
-/* =========================================================
-   🌸 NAVIGATION
-========================================================= */
 
 function setupNavigation() {
 
@@ -387,9 +372,7 @@ function showSection(section) {
 }
 
 
-/* =========================================================
-   ➕ ADD TASK
-========================================================= */
+
 
 function openAddTaskModal(dueDate = "") {
 
@@ -442,9 +425,7 @@ window.openAddTaskModal =
     openAddTaskModal;
 
 
-/* =========================================================
-   ✏️ EDIT TASK
-========================================================= */
+
 
 function openEditTaskModal(id) {
 
@@ -498,9 +479,6 @@ function openEditTaskModal(id) {
 }
 
 
-/* =========================================================
-   💾 TASK MODAL
-========================================================= */
 
 function setupTaskModal() {
 
@@ -725,9 +703,7 @@ function saveTaskFromForm() {
 }
 
 
-/* =========================================================
-   ❌ CLOSE TASK MODAL
-========================================================= */
+
 
 function closeTaskModalFunction() {
 
@@ -747,9 +723,8 @@ function closeTaskModalFunction() {
 }
 
 
-/* =========================================================
-   ⭐ IMPORTANT TOGGLE
-========================================================= */
+
+
 
 function toggleImportant(id) {
 
@@ -778,9 +753,7 @@ function toggleImportant(id) {
 }
 
 
-/* =========================================================
-   🗑️ DELETE TASK
-========================================================= */
+
 
 function askDeleteTask(id) {
 
@@ -904,9 +877,6 @@ function setupDeleteModal() {
 }
 
 
-/* =========================================================
-   📝 NOTES
-========================================================= */
 
 function openNotesModal(id) {
 
@@ -1304,9 +1274,7 @@ window.deleteNote =
     deleteNote;
 
 
-/* =========================================================
-   📊 RENDER EVERYTHING
-========================================================= */
+
 
 function renderEverything() {
 
@@ -1327,9 +1295,7 @@ function renderEverything() {
 }
 
 
-/* =========================================================
-   📊 STATISTICS
-========================================================= */
+
 
 function updateStatistics() {
 
@@ -1401,9 +1367,7 @@ function updateStatistics() {
 }
 
 
-/* =========================================================
-   🔍 FILTER TASKS FOR SEARCH
-========================================================= */
+
 
 function getFilteredTasks() {
 
@@ -1470,9 +1434,7 @@ function getFilteredTasks() {
 }
 
 
-/* =========================================================
-   🎀 KANBAN
-========================================================= */
+
 
 function renderKanban() {
 
@@ -1583,9 +1545,7 @@ function renderColumn(
 }
 
 
-/* =========================================================
-   🎀 CREATE TASK CARD
-========================================================= */
+
 
 function createTaskCard(task) {
 
@@ -1812,9 +1772,7 @@ function createTaskCard(task) {
 }
 
 
-/* =========================================================
-   🖱️ DRAG AND DROP
-========================================================= */
+
 
 function setupDragAndDrop() {
 
@@ -1947,9 +1905,7 @@ function setupDragAndDrop() {
 }
 
 
-/* =========================================================
-   💖 IMPORTANT DASHBOARD
-========================================================= */
+
 
 function renderDashboardImportant() {
 
@@ -2001,9 +1957,7 @@ function renderDashboardImportant() {
 }
 
 
-/* =========================================================
-   💖 IMPORTANT PAGE
-========================================================= */
+
 
 function renderImportantPage() {
 
@@ -2054,9 +2008,7 @@ function renderImportantPage() {
 }
 
 
-/* =========================================================
-   🎀 RECENT TASKS
-========================================================= */
+
 
 function renderRecentTasks() {
 
@@ -2119,9 +2071,7 @@ function renderRecentTasks() {
 }
 
 
-/* =========================================================
-   🌸 MINI TASK HTML
-========================================================= */
+
 
 function createMiniTaskHTML(task) {
 
@@ -2228,9 +2178,7 @@ function createMiniTaskHTML(task) {
 }
 
 
-/* =========================================================
-   🎀 MINI TASK EVENTS
-========================================================= */
+
 
 function attachMiniTaskEvents(container) {
 
@@ -2331,9 +2279,7 @@ function attachMiniTaskEvents(container) {
 }
 
 
-/* =========================================================
-   📅 CALENDAR SETUP
-========================================================= */
+
 
 function setupCalendar() {
 
@@ -2377,9 +2323,7 @@ function setupCalendar() {
 }
 
 
-/* =========================================================
-   📅 RENDER CALENDAR
-========================================================= */
+
 
 function renderCalendar() {
 
@@ -2560,12 +2504,7 @@ function renderCalendar() {
         );
 
 
-        /*
-            🌸 CLICK DATE
-
-            Clicking a date opens Add Task
-            with that date already selected.
-        */
+        
 
         dayElement.addEventListener(
             "click",
@@ -2588,9 +2527,7 @@ function renderCalendar() {
 }
 
 
-/* =========================================================
-   📅 CREATE YYYY-MM-DD
-========================================================= */
+
 
 function makeDateString(
     year,
@@ -2615,9 +2552,7 @@ function makeDateString(
 }
 
 
-/* =========================================================
-   📅 TODAY
-========================================================= */
+
 
 function getTodayString() {
 
@@ -2634,9 +2569,7 @@ function getTodayString() {
 }
 
 
-/* =========================================================
-   🔍 SEARCH
-========================================================= */
+
 
 function setupSearch() {
 
@@ -2657,9 +2590,7 @@ function setupSearch() {
 }
 
 
-/* =========================================================
-   📊 CHART
-========================================================= */
+
 
 function updateChart() {
 
@@ -2829,9 +2760,7 @@ function updateChart() {
 }
 
 
-/* =========================================================
-   🌷 HELPER FUNCTIONS
-========================================================= */
+
 
 function generateId() {
 
@@ -2933,9 +2862,7 @@ function formatDateTime(dateString) {
 }
 
 
-/* =========================================================
-   🛡️ HTML ESCAPE
-========================================================= */
+
 
 function escapeHTML(value) {
 
@@ -2956,9 +2883,7 @@ function escapeHTML(value) {
 }
 
 
-/* =========================================================
-   🌸 GLOBAL FUNCTIONS
-========================================================= */
+
 
 window.openEditTaskModal =
     openEditTaskModal;
@@ -2972,12 +2897,7 @@ window.askDeleteTask =
     askDeleteTask;
 
 
-/* =========================================================
-   💗 END OF TASKBLOOM JAVASCRIPT
-========================================================= */
-/* =========================================================
-   📱 PWA SERVICE WORKER
-========================================================= */
+
 
 if ("serviceWorker" in navigator) {
 
